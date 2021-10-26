@@ -181,6 +181,35 @@ h3 {
 
 }
 
+.container-recently-played {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-creato-per-te {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-cover-album {
+    height: 200px;
+    width: 200px;
+}
+
+.creato-per-te {
+    height: 200px;
+    width: 200px;
+}
+
+.container-second {
+    max-width: calc(100% / 3);
+}
+
+
+
+
 
 
 /* FOOTER */
