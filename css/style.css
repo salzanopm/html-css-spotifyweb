@@ -3,10 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* style reset */
+body {
     font-family: 'Montserrat', sans-serif;
     color: #787b80;
 }
 
+li {
+    list-style-type: none;
+}
 /* COMMON */
 
 /* imagine */
@@ -91,14 +98,15 @@ h3 {
     width: 200px;
     background-color: #000000;
     overflow: hidden;
+    padding-left: 20px;
 }
 
 /* logo part */
-.container-logo {
+.box-logo {
     width: 100%;
     height: 80px;
     line-height: 80px;
-    text-align: center;
+    text-align: left;
 }
 
 .img-logo {
@@ -107,13 +115,56 @@ h3 {
 }
 
 /* side menu part */
-.container-menu-home {
+.box-menu-home {
     vertical-align: middle;
-
 }
+
 .icon-side-menu {
     width: 25px;
     vertical-align: middle;
+}
+
+.box-menu-playlist {
+
+}
+
+.icon-plus {
+    background-color: #a3a3a3;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: black;
+}
+
+.fa-plus {
+    vertical-align: middle;
+}
+
+.icon-download {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.box-icon-profile {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: #808080;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.icon-profile {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    
 }
 
 /* FOOTER */
