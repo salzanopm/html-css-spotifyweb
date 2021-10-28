@@ -442,14 +442,7 @@ footer {
     font-size: 20px;
 }
 
-.case-volume-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: flex-end;
-    justify-content: space-around;
-    align-items: center;
-    width: 200px;
-}
+
 
 .minicase-player-bar {
     width: calc(80% - 10px) ;
@@ -457,7 +450,10 @@ footer {
 }
 
 .minicase-volume-bar {
-    width: 30%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 
 }
@@ -471,7 +467,7 @@ footer {
 .green-player-bar {
     background-color: lightgreen;
     height: 4px;
-    width: 20%;
+    width: 40%;
     display: none;
     position: relative;
 
@@ -488,6 +484,15 @@ footer {
     display:flex;
 }
 
+.minicase-volume-bar:hover .green-player-bar {
+    display: flex;
+    align-items: center;
+}
+
+
+.minicase-volume-bar:hover .dot {
+    display:flex;
+}
 
 
 .dot {
