@@ -414,7 +414,8 @@ footer {
     width: 40%;
     text-align: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 10px 0;
 
 }
 
@@ -428,7 +429,7 @@ footer {
 }
 
 .case-icon-bar {
-    width: 100%;
+    width: 50%;
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
