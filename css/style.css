@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* style reset */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -18,6 +20,7 @@ li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 hr {
@@ -103,6 +106,10 @@ h3 {
     text-align: right;
 }
 
+.btn-active:hover{
+    font-size: 12px;
+}
+
 /* MAIN */
 
 .container {
@@ -162,6 +169,23 @@ h3 {
 .box-menu-playlist {
     padding-left: 10px;
 }
+
+.link:hover {
+    color: white;
+}
+
+.case-crea-playlist:hover .background-icon-plus {
+    background-color: white;
+}
+
+.background-icon-plus:hover > .link-playlist {
+    color: white;
+}
+
+.link-playlist:hover {
+    color: white;
+}
+
 
 .box-install-profile {
     padding-left: 10px;
@@ -249,7 +273,7 @@ h3 {
     padding: 0 10px;
 }
 .navbar > li > span > a:hover {
-
+    color: white;
 }
 
 
@@ -356,6 +380,11 @@ footer {
     background-color: #282828;
 }
 
+.underline-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .player-bar {
     height: 60px;
     width: 100%;
@@ -408,6 +437,14 @@ footer {
     justify-content: space-around;
 }
 
+.player-active {
+    display: flex;
+}
+
+.player-active:hover {
+    font-size: 20px;
+}
+
 .case-volume-bar {
     display: flex;
     justify-content: space-around;
@@ -429,6 +466,12 @@ footer {
     background-color: white;
     border-color: white;
 }
+
+.case-player-bar:hover  .hr-player-bar > hr.player-white {
+    background-color: #92d72d;
+    border-color: #92d72d;
+}
+
 
 .case-player-bar > .hr-player-bar > hr.player-grey {
     width: 230px;
@@ -452,7 +495,31 @@ footer {
     border-bottom-left-radius: 10px;
     background-color: white;
     border-color: white;
-    
+}
+
+.dot {
+    text-align: center;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+    align-self: center;
+}
+
+.case-player-bar:hover .dot {
+    display: flex;
+}
+
+.case-volume-bar:hover .dot {
+    display: flex;
+}
+
+
+.case-volume-bar:hover .hr-volume > hr.volume-white {
+    background-color: #92d72d;
+    border-color: #92d72d;
 }
 
 .case-volume-bar > .hr-volume > hr.volume-grey {

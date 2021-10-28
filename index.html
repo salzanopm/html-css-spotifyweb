@@ -17,7 +17,7 @@
     <header>
         <!-- start fixed button upgrade -->
         <div class="upgrade">
-            <h5 class="btn">EFFETTUA L'UPGRADE</h5>
+            <h5 class="btn btn-active">EFFETTUA L'UPGRADE</h5>
         </div>
         <!-- end fixed button upgrade -->
     </header>
@@ -43,37 +43,38 @@
                             <li>
                                 <img class="icon-side-menu" src="img/search.svg" alt="Home icon">
                                 <span>
-                                    <a class="text-medium text-grey" href="#">Cerca</a>
+                                    <a class="text-medium text-grey link" href="#">Cerca</a>
                                 </span>
                             </li>
                             <li>
                                 <img class="icon-side-menu" src="img/libreria.svg" alt="Home icon">
                                 <span>
-                                    <a class="text-medium text-grey" href="#">La tua libreria</a>
+                                    <a class="text-medium text-grey link" href="#">La tua libreria</a>
                                 </span>
                             </li>
                         </ul>
                     </div>
                     <div class="box-menu-playlist">
                         <h5 class="title-space">PLAYLIST</h5>
-                        <div>
+                        <div class="case-crea-playlist">
                             <p class="background-icon-plus"><i class="fas fa-plus"></i></p>
-                            <span class="text-big">Crea playlist</span>
+                            <span class="text-big link-playlist">Crea playlist</span>
                         </div>
                         <ul class="text-medium">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            <li><a class="text-medium text-grey link" href="#">Nome Playlist</a></li>
+                            
                         </ul>
                     </div>
                 </div>
                 <div class="box-install-profile">
                     <img class="icon-download" src="img/download.svg" alt="Icon Download">
-                    <span class="text-medium">Installa app</span>
+                    <span class="text-medium link">Installa app</span>
                     <hr class="hr-download">
                     <div class="background-icon-profile"><img class="icon-profile" src="img/profile.svg" alt="Icon profile"></div>
                     <h5>John Doe</h5>
@@ -227,24 +228,30 @@
                 </div>
                 <div class="container-name-played">
                     <h5>Sinister</h5>
-                    <p class="text-small">Brano Nome</p>
+                    <p class="text-small link underline-hover">Brano Nome</p>
                 </div>
                 <div>
-                    <span><i class="far fa-heart"></i></span>
-                    <span><i class="far fa-folder"></i></span>
+                    <span class="link"><i class="far fa-heart"></i></span>
+                    <span class="link"><i class="far fa-folder"></i></span>
                 </div>
             </div>
             <div class="box-player-bar">
                 <div class="case-icon-bar">
                     <i class="fas fa-random fa-xs text-white"></i>
                     <i class="fas fa-step-backward fa-xs text-white"></i>
-                    <i class="far fa-play-circle fa-lg text-white"></i>
+                    <span class="player-active">
+                        <i class="far fa-play-circle fa-lg real-icon text-white"></i>
+                    </span>
                     <i class="fas fa-step-forward fa-xs text-white"></i>
                     <i class="fas fa-redo fa-xs text-white"></i>
                 </div>
                 <div class="case-player-bar">
                     <span class="text-small text-white">0:25</span>
-                    <span class="hr-player-bar"><hr class="player-white"><hr class="player-grey"></span>
+                    <span class="hr-player-bar">
+                        <hr class="player-white">
+                        <span class="dot"></span>
+                        <hr class="player-grey">
+                    </span>
                     <span class="text-small text-white">4:35</span>
                 </div>
             </div>
@@ -252,7 +259,11 @@
                 <i class="fas fa-list fa-xs text-white"></i>
                 <i class="fas fa-desktop fa-xs text-white"></i>
                 <i class="fas fa-volume-up fa-xs text-white"></i>
-                <span class="hr-volume fa-xs text-white"><hr class="volume-white"><hr class="volume-grey"></span>
+                <span class="hr-volume fa-xs text-white">
+                    <hr class="volume-white">
+                    <span class="dot"></span>
+                    <hr class="volume-grey">
+                </span>
             </div>
         </div>
     </footer>
