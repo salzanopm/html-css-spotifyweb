@@ -453,47 +453,46 @@ footer {
 
 .minicase-player-bar {
     width: calc(80% - 10px) ;
+
 }
 
 .player-grey-bar {
     background-color: gray;
-    height: 2px;
+    height: 4px;
     width: 100%;
 }
 
 .green-player-bar {
     background-color: lightgreen;
-    height: 2px;
+    height: 4px;
     width: 20%;
+    display: none;
 
 }
 
 
+.minicase-player-bar:hover .green-player-bar {
+    display: flex;
+}
 
 
-
-
+.minicase-player-bar:hover .dot {
+    display:flex;
+}
 
 
 
 .dot {
-    text-align: center;
-    content: '';
+
     width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
     display: none;
     align-self: center;
+    align-items: flex-end;
 }
 
-.case-player-bar:hover .dot {
-    display: flex;
-}
-
-.case-volume-bar:hover .dot {
-    display: flex;
-}
 
 
 .background-round {
