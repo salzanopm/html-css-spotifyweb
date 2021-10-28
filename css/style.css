@@ -136,8 +136,6 @@ h3 {
     line-height: 60px;
     text-align: left;
     padding-left: 10px;
-
-    
 }
 
 .img-logo {
@@ -146,9 +144,6 @@ h3 {
 }
 
 /* side menu part */
-.main-side-menu {
-    
-}
 
 .title-space {
     padding: 15px 0 10px 0;
@@ -213,7 +208,7 @@ h3 {
 }
 
 .text-medium > li {
-    padding: 9px 0;
+    padding: 4px 0;
 }
 
 .fa-plus {
@@ -505,6 +500,98 @@ footer {
     border-radius: 50%;
 }
 
+.menu-xs {
+    display: none;
+}
 
 /* MEDIAQUERY */
 /* desktop first */
+/* partendo da Spotify-lg */
+
+/* spotify-md */
+@media screen and (max-width: 1100px) {
+    .box-cover-album {
+        width:calc( 100% / 4) ;   
+    }
+}
+
+/* Spotify-s */
+
+@media screen and (max-width: 700px) {
+    .box-cover-album {
+        width:calc( 100% / 2) ;   
+    }
+}
+
+/* Spotify-xs */
+
+@media screen and (max-width: 600px) {
+
+    .main-side-menu {
+        display: none;
+    }
+
+    .main-side-menu-xs {
+        width: 60px;
+        padding-left: 5px;
+        text-align: center;
+        display: flex;
+        padding-right: 5px;
+        height: 100%;
+        background-color: #000000;
+
+    }
+
+    img {
+        width: 70%;
+    }
+    .menu-normal {
+        display: none;
+    }
+    .menu-xs {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box-logo-xs {
+        width: 40px;
+        padding-left: 0;
+        text-align: right;
+        margin-right: 0;
+
+
+    }
+
+    .profile-download-box-xs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: left;
+        align-content: center;
+    }
+
+    .box-install-profile-xs {
+        padding-left: 0;
+        text-align: left;
+        
+
+    }
+
+    .upgrade {
+        width: calc(100% - 60px);
+    }
+
+    .main-content {
+        width: calc(100% - 60px);
+
+    }
+
+    .box-song-name {
+        
+    }
+}
+
+
+
+
