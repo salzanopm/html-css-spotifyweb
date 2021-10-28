@@ -441,6 +441,9 @@ footer {
 .player-active:hover {
     font-size: 20px;
 }
+.space-icon {
+    margin: 0 5px;
+}
 
 
 
@@ -451,9 +454,11 @@ footer {
 
 .minicase-volume-bar {
     display: flex;
-    width: 100%;
+    width: 40%;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 
 }
