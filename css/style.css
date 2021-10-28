@@ -456,6 +456,12 @@ footer {
 
 }
 
+.minicase-volume-bar {
+    width: 30%;
+
+
+}
+
 .player-grey-bar {
     background-color: gray;
     height: 4px;
@@ -467,12 +473,14 @@ footer {
     height: 4px;
     width: 20%;
     display: none;
+    position: relative;
 
 }
 
 
 .minicase-player-bar:hover .green-player-bar {
     display: flex;
+    align-items: center;
 }
 
 
@@ -483,14 +491,16 @@ footer {
 
 
 .dot {
-
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
     display: none;
-    align-self: center;
-    align-items: flex-end;
+    
 }
 
 
