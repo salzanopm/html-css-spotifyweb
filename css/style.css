@@ -113,13 +113,13 @@ h3 {
 
 /* MAIN */
 
-.container-main {
+.megacontainer-main {
     height: calc(100vh - 60px);
     width: 100%;
 }
 
 /* main side menu  */
-.main-left-menu {
+.subcontainer-main-left-menu {
     height: 100%;
     width: 200px;
     background-color: #000000;
@@ -391,7 +391,6 @@ footer {
 
 .box-song-name {
    display: flex;
-   justify-content: flex-start;
    align-items: center;
 }
 
@@ -415,7 +414,6 @@ footer {
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px 0;
 
 }
 
@@ -423,15 +421,16 @@ footer {
 
 .case-player-bar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 
 }
 
 .case-icon-bar {
     width: 50%;
     display: flex;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     justify-content: space-around;
 }
 
@@ -449,19 +448,21 @@ footer {
 
 
 .minicase-player-bar {
-    width: calc(80% - 10px) ;
+    width: calc(80% - 10px);
+    margin: 0 5px;
 
 }
 
 .minicase-volume-bar {
     display: flex;
-    width: 40%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    width: 25%;
     align-items: center;
+}
 
-
+.case-volume-bar {
+    display: flex;
+    width: 20%;
+    align-items: center;
 }
 
 .player-grey-bar {
@@ -490,13 +491,13 @@ footer {
     display:flex;
 }
 
-.minicase-volume-bar:hover .green-player-bar {
+.case-volume-bar:hover .green-player-bar {
     display: flex;
     align-items: center;
 }
 
 
-.minicase-volume-bar:hover .dot {
+.case-volume-bar:hover .dot {
     display:flex;
 }
 
@@ -547,7 +548,7 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-    .main-left-menu {
+    .subcontainer-main-left-menu {
         display: none;
     }
 
@@ -593,7 +594,7 @@ footer {
 
     .box-install-profile-xs {
         padding-left: 0;
-        text-align: left;
+        text-align: center;
         
 
     }
@@ -609,6 +610,10 @@ footer {
 
     .box-song-name {
         margin-right: 10px;
+    }
+
+    .icon-download {
+        height: 70%;
     }
 }
 
