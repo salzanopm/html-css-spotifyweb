@@ -104,7 +104,7 @@ h3 {
     right: 0;
     height: 60px;
     width: calc(100% - 200px);
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     text-align: right;
 }
 
@@ -507,12 +507,17 @@ footer {
     }
 }
 
-/* Spotify-s */
+/* Spotify-sm */
 
 @media screen and (max-width: 700px) {
     .box-cover-album {
         width:calc( 100% / 2) ;   
     }
+
+    img {
+        width: 80%;
+    }
+
 }
 
 /* Spotify-xs */
@@ -535,11 +540,11 @@ footer {
     }
 
     img {
-        width: 100%;
+        width: 70%;
+        max-width: 200px;
     }
-
-    img[class$="-xs"] {
-        width: 50%;
+    .mix-title {
+        min-width: ;
     }
 
     .subcontainer-main-left-menu-normal-size {
@@ -547,7 +552,7 @@ footer {
     }
     .subcontainer-main-left-menu-xs-size {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
     }
