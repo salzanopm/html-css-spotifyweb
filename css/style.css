@@ -544,7 +544,14 @@ footer {
         max-width: 200px;
     }
     .mix-title {
-        min-width: ;
+        min-width: 20px;
+    }
+    .text-medium {
+        min-width: 10px;
+    }
+
+    h4 {
+        min-width: 10px;
     }
 
     .subcontainer-main-left-menu-normal-size {
